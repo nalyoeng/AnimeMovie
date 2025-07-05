@@ -5,7 +5,7 @@
 }
 body{
     width: 100%;
-    height: auto;
+    height: 100vh;
     background-color: black;
     overflow-x: hidden;
 }
@@ -17,10 +17,11 @@ body{
     --full-size: 100%;
 }
 .header{
-    position: sticky;
+    position: fixed;
     z-index: 1;
     width: 100%;
     height: 14vh;
+    top: 0%;
     display: flex;
     background-color: rgb(28,27,27);
     justify-content: space-around;
@@ -92,11 +93,11 @@ body{
 .connect{
     width: 100%;
     height: 100vh;
+    margin-top: 6%;
     & h1{
         font-size: 40px;
         color: var(--white-color);
         text-align: center;
-        margin-top: 20px;
     }
     .contain{
         width: 100%;
@@ -166,17 +167,22 @@ body{
                 color: white;
                 margin-top: 10vh;
                 & .item{
-                    width: 190px;
+                    width: 200px;
                     height: auto;
                     place-content: center;
                     place-items: center;
                     & h3{
                         margin-top: 5px;
                         color: white;
+                        font-size: 25px;
                     }
                     & p{
                         margin-top: 5px;
                         color: gray;
+                    }
+                    & #icon{
+                        font-size: 40px;
+                        color: var(--white-color);
                     }
                 }
             }
@@ -230,11 +236,12 @@ footer{
             color: white;
            }
         }
-        & .connect{
+        & .connect1{
             & h1{
                 font-size: 30px;
                 color: antiquewhite;
                 font-weight: 900;
+                margin-top: 10px;
             }
             & h1:hover{
                 transition: 0.3s;
@@ -295,7 +302,7 @@ footer{
     }
     & .by{
         width: 100%;
-        height: 100px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
